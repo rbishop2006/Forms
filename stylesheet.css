@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(82 154 205);
+}
+form {
+  display: grid;
+  grid-template-areas: "grp1 grp2 grp3";
+}
+fieldset {
+  border: none;
+}
+.grp1 {
+  grid-area: grp1;
+}
+.grp2 {
+  grid-area: grp2;
+}
+.grp3 {
+  grid-area: grp3;
+}
+label {
+  display: block;
+  color: white;
+  font-size: 0.65em;
+  font-family: sans-serif;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+input,
+textarea,
+select {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  height: 30px;
+  outline: none;
+}
+textarea {
+  height: 100px;
+  transition: 1s;
+  font-size: 15px;
+}
+textarea:hover {
+  background-color: rgb(45, 160, 141);
+  height: 150px;
+  border-color: sienna;
+  opacity: 80%;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid rgb(39, 96, 140);
+  transition: 1s;
+}
+input {
+  font-size: 15px;
+  padding-left: 10px;
+}
+::placeholder {
+  font-style: italic;
+  padding-left: 5px;
+  font-size: 15px;
+  color: rgb(65, 103, 129);
+}
